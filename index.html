@@ -4,36 +4,65 @@
 <head>
 	<link rel="stylesheet" href="main.css" type="text/css" />
 	<title>Static Navigation</title>
-</head>
-
-<body>
-	<div id="navigation">
-		<a href="#">Home</a>
-		<a href="#">Portfolio</a>
-		<a href="#">Our Apps</a>
-		<a href="#">Support</a>
-		<a href="#">Press</a>
-		<a href="#">About</a>
-	</div>
-	
-	<div id="content">
-	
-        <script type="text/javascript">
+    
+    <script type="text/javascript">
             if ( window.addEventListener ) {  
             var state = 0, konami = [38,38,40,40,37,39,37,39,66,65];  
             window.addEventListener("keydown", function(e) {  
                     if ( e.keyCode == konami[state] ) state++;  
                     else state = 0;  
-                    if ( state == 10 )  
-                    window.location = "http://www.go4expert.com";  //you can write your own code here
+                    if ( state == 10 )  {
+                        window.location = "http://www.go4expert.com"
+        
+                        
+                    }; 
                 }, true);  
             }  
             
             
-        </script>
-		
+    </script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="main.js"></script>
+
+</head>
+
+<body>
+	<div id="navigation">
+		<a href="index.html">Home</a>
+		<a href="portfoilo.html">Portfolio</a>
+		<a href="#">CrowdControl</a>
+		<a href="#">Support</a>
+		<a href="#">Press</a>
+		<a href="#">About</a>
+	</div>
+      
+        
+        
+    
+<div id="content">
+    <p>
+        <a class="btn" data-popup-open="popup-1" href="#">open popup </a>
+    </p>
+        
+    <div id="content">
+    </div>
+    
+    
         <div class="boxed">
                 This text is enclosed in a box. This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.
-        </div> 
-	</div>
+        </div>
+    </div>
+    
+    
+    <a class="btn" data-popup-open="popup-1" href="#">Open Popup #1</a>
+ 
+    <div class="popup" data-popup="popup-1">
+    <div class="popup-inner">
+        <h2>Wow! This is Awesome! (Popup #1)</h2>
+        <p>Donec in volutpat nisi. In quam lectus, aliquet rhoncus cursus a, congue et arcu. Vestibulum tincidunt neque id nisi pulvinar aliquam. Nulla luctus luctus ipsum at ultricies. Nullam nec velit dui. Nullam sem      eros, pulvinar sed pellentesque ac, feugiat et turpis. Donec gravida ipsum cursus massa malesuada tincidunt. Nullam finibus nunc mauris, quis semper neque ultrices in. Ut ac risus eget eros imperdiet posuere nec eu lectus.          </p>
+        <p><a data-popup-close="popup-1" href="#">Close</a></p>
+        <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+    </div>
+    </div>
+	
 </body>
