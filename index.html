@@ -2,10 +2,13 @@
 <html lang="en-US">
 
 <head>
+    <script src="main.js"></script>
 	<link rel="stylesheet" href="main.css" type="text/css" />
 	<title>Static Navigation</title>
     
-    <script>
+    <!-- konami code easter egg -->
+    <dev><
+    <script type="text/javascript">
         var els, i, len, title;
         var konamiCode = '38,38,40,40,37,39,37,39,66,65';
         var keyPresses = [];
@@ -16,16 +19,20 @@
             }
         };
         var runKonami = function() {
-            
-            els = document.getElementsByTagName('h2');
-            for (i = 0, len = els.length; i < len; i++) {
-                title = els[i].textContent || els[i].innerText;
-                title = title.trim();
-                els[i].innerHTML = title.split('').reverse().join('');
-            }
+            //call pop up functon
+            kon().modal({fadeDuration:250,keepelement:!0});
         };
         document.addEventListener('keyup', checkKonami);
     </script>
+    </dev>
+    
+    <script src="jquery.js"></script> 
+    <script> 
+        $(function(){
+        $("#divId").load("../BattleCity-master/BattleCity.html"); 
+        });
+    </script> 
+   
     
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="main.js"></script>
@@ -33,11 +40,12 @@
 </head>
 
 <body>
+    <!-- code for navigation bar -->
 	<div id="navigation">
 		<a href="index.html">Home</a>
 		<a href="portfoilo.html">Portfolio</a>
-		<a href="#">CrowdControl</a>
-		<a href="#">Support</a>
+		<a href="crowdcontrol.html">CrowdControl</a>
+		<a href="#">Games</a>
 		<a href="#">Press</a>
 		<a href="#">About</a>
 	</div>
@@ -47,6 +55,9 @@
     
     <div id="content">   
         <div class="boxed">
+            <h1>
+                ello
+            </h1>
             <h2>
                 This text is enclosed in a box. This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.
             </h2>
@@ -55,15 +66,55 @@
     
     
 
- 
-    <div class="popup" data-popup="popup-1">
-        <div class="popup-inner">
-            <h2>Wow! This is Awesome! (Popup #1)</h2>
-            <p>Donec in volutpat nisi. In quam lectus, aliquet rhoncus cursus a, congue et arcu. Vestibulum tincidunt neque id nisi pulvinar aliquam. Nulla luctus luctus ipsum at ultricies. Nullam nec velit dui. Nullam sem eros, pulvinar sed pellentesque ac, feugiat et turpis. Donec gravida ipsum cursus massa malesuada tincidunt. Nullam finibus nunc mauris, quis semper neque ultrices in. Ut ac risus eget eros imperdiet posuere nec eu lectus.</p>
-            <p><a data-popup-close="popup-1" href="#">Close</a></p>
-            <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+    <!-- Popup konami -->
+    <div id="myModal" class="modal">
+  <!-- konami content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">XXX</span>
+                <h2>Modal Header</h2>
+            </div>
+            <div class="modal-body">
+               <center>
+                   <!-- game activation -->
+                   <OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" WIDTH="640" HEIGHT="480" id="dots/Dots II/dots-  ii.swf" ALIGN="">
+<PARAM NAME=movie VALUE="YOURFILENAMEHERE.swf">
+<PARAM NAME=quality VALUE=high>
+<PARAM NAME=bgcolor VALUE=#333399>
+<EMBED src="dots/Dots II/dots-ii.swf" quality=high bgcolor=#333399 WIDTH="640" HEIGHT="480" NAME="Yourfilename" ALIGN="" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer"></EMBED></OBJECT>
+              </center>
+            </div>
+            <div class="modal-footer">
+                <h3>Modal Footer</h3>
+            </div>
         </div>
-    </div> 
-   
-	
+    </div>
+    <!-- popup action script-->
+    <div>
+    <script>
+// Get the modal
+    var modal = document.getElementById('myModal');
+// Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+// When the user clicks the button, open the modal 
+    function kon() {
+        modal.style.display = "block";
+    }
+// When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+// When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+    </div>
+    
+	<dev id="footer">
+        Charles Bonn 2016
+    </dev>
 </body>
