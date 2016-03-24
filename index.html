@@ -12,6 +12,7 @@
 	<title>Home</title>
     
     <!-- konami code easter egg -->
+    <dev>
     <script type="text/javascript">
         var els, i, len, title;
         var konamiCode = '38,38,40,40,37,39,37,39,66,65';
@@ -19,6 +20,7 @@
         var checkKonami = function(e) {
         keyPresses.push(e.keyCode);
             if (keyPresses.slice(keyPresses.length-10).join() === konamiCode) {
+                
                 runKonami();
             }
         };
@@ -28,6 +30,7 @@
         };
         document.addEventListener('keyup', checkKonami);
     </script>
+    </dev>
      
 </head>
 
@@ -89,12 +92,14 @@
                <center>
                    <!-- game activation -->  
                    
-                   <OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" WIDTH="640" HEIGHT="480" id="gameId" ALIGN="">
-<PARAM NAME=movie VALUE="gameId">
-<PARAM NAME=quality VALUE=high>
-<PARAM NAME=bgcolor VALUE=#333399>
-<EMBED src="gameId" quality=high bgcolor=#333399 WIDTH="640" HEIGHT="480" NAME="Yourfilename" ALIGN="" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer"></EMBED></OBJECT>
+                   <OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" WIDTH="640" HEIGHT="480" id="gameId1" ALIGN="">
+<PARAM id="gameId2" NAME=movie VALUE="gameId" >
+<PARAM id="gameId3" NAME=quality VALUE=high>
+<PARAM id="gameId4" NAME=bgcolor VALUE=#333399>
+<EMBED id="gameId5" src="gameId" quality=high bgcolor=#333399 WIDTH="640" HEIGHT="480" NAME="Yourfilename" ALIGN="" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer"></EMBED></OBJECT>
                 
+        
+    
               </center>
             </div>
             <div class="modal-footer">
@@ -102,13 +107,15 @@
             </div>
         </div>
     </div>
-                
-    <script>
+     
+    <!-- script to pick a random game -->
+    <div>
+    <script type="text/javascript">
         rand_game();
-        document.querySelectoryALL('gameId').setAttribute('title',name_of_game());
-        
-        alert(document.getElementById('gameId').title);
+        document.getElementById('gameId5').setAttribute( 'src' , name_of_game() );       
     </script>
+    </div>
+
     <!-- popup action script-->
     <div>
     <script type="text/javascript">
@@ -134,6 +141,7 @@
     </script>
     </div>
     
+    <!-- footer space -->
 	<dev id="footer">
         Charles Bonn 2016
     </dev>

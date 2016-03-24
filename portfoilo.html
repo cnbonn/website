@@ -12,6 +12,7 @@
 	<title>Home</title>
     
     <!-- konami code easter egg -->
+    <dev>
     <script type="text/javascript">
         var els, i, len, title;
         var konamiCode = '38,38,40,40,37,39,37,39,66,65';
@@ -28,6 +29,7 @@
         };
         document.addEventListener('keyup', checkKonami);
     </script>
+    </dev>
      
 </head>
 
@@ -49,23 +51,22 @@
             </h1>
             <h2>
                 <div class="avatar"></div>
+                This text is enclosed in a box. This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.
             </h2>
         </div>
     </div>
-    
-        <div id="content">   
+    <div id="content">   
         <div class="boxed">
             <h1>
                 ello
             </h1>
-            <hr noshade>
             <h2>
                 This text is enclosed in a box. This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.
             </h2>
         </div>
     </div>
     
-        <div id="content">   
+    <div id="content">   
         <div class="boxed">
             <h1>
                 ello
@@ -88,13 +89,14 @@
             </div>
             <div class="modal-body">
                <center>
-                   <!-- game activation -->
+                   <!-- game activation -->  
                    
-                   <OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" WIDTH="640" HEIGHT="480" id="games/dots/Dots II/dots-  ii.swf" ALIGN="">
-<PARAM NAME=movie VALUE="YOURFILENAMEHERE.swf">
-<PARAM NAME=quality VALUE=high>
-<PARAM NAME=bgcolor VALUE=#333399>
-<EMBED src="games/dots/Dots II/dots-ii.swf" quality=high bgcolor=#333399 WIDTH="640" HEIGHT="480" NAME="Yourfilename" ALIGN="" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer"></EMBED></OBJECT>
+                   <OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" WIDTH="640" HEIGHT="480" id="gameId1" ALIGN="">
+<PARAM id="gameId2" NAME=movie VALUE="gameId" >
+<PARAM id="gameId3" NAME=quality VALUE=high>
+<PARAM id="gameId4" NAME=bgcolor VALUE=#333399>
+<EMBED id="gameId5" src="gameId" quality=high bgcolor=#333399 WIDTH="640" HEIGHT="480" NAME="Yourfilename" ALIGN="" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer"></EMBED></OBJECT>
+                  
               </center>
             </div>
             <div class="modal-footer">
@@ -102,6 +104,18 @@
             </div>
         </div>
     </div>
+     
+    <!-- script to pick a random game -->
+    
+    <script type="text/javascript">
+        rand_game();
+        document.getElementById('gameId5').setAttribute( 'src' , name_of_game() );
+
+        
+       
+    </script>
+    
+
     <!-- popup action script-->
     <div>
     <script type="text/javascript">
@@ -127,6 +141,7 @@
     </script>
     </div>
     
+    <!-- footer space -->
 	<dev id="footer">
         Charles Bonn 2016
     </dev>
