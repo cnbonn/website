@@ -14,20 +14,31 @@ body {
   text-align: center;
   padding-top: 15px;
   /* Adds shadow to the bottom of the bar */
-  -webkit-box-shadow: 0px 0px 8px 0px #000000;
-  -moz-box-shadow: 0px 0px 8px 0px #000000;
-  box-shadow: 0px 0px 8px 0px #000000;
+  -webkit-box-shadow: 0px 0px 8px 0px black;
+  -moz-box-shadow: 0px 0px 100px 0px #000000;
+  box-shadow: 0px 0px 100px 0px black;
   /* Adds the transparent background */
-  background-color: rgba(1, 1, 1, 1);
-  color: rgba(1, 1, 1, 0.8);
+    
+  background: rgba(0,118,245,1); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(top, rgba(0,118,245,1), rgba( 73,221,252,1)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(top, rgba(0,118,245,1), rgba( 73,221,252,1)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(top, rgba(0,118,245,1), rgba( 73,221,252,1)w); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to top, rgba(0,118,245,1), rgba( 73,221,252,1)); /* Standard syntax */
+  color: rgba(244, 1, 1, 0.8);
+  border: 2px solid black ;
+ 
 }
+
+
+
 
 #navigation a {
 	font-size: 14px;
 	padding-left: 15px;
 	padding-right: 15px;
-	color: blue;
+	color: black; /* word color */
 	text-decoration: none;
+    
 }
 
 #navigation a:hover {
@@ -50,15 +61,16 @@ body {
 }
 
 body {
-    background-image: url("neonblue.jpg");
+    background-image: url("honeycomb.jpg");
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
 } 
 
 .boxed {
-    border: 1px solid blue ;
-    background-color: black;
-    color: blue;
+    border: 5px solid black ;
+    background-color: #2EB2EC;
+    color: black;
     padding-top:  30px;
     padding-bottom: 30px;
     padding-left: 30px;
@@ -121,5 +133,67 @@ body {
     text-decoration: none;
     cursor: pointer;
 }
+
+
+/* nav bar buttons */
+.button {
+   border: 1px solid black;
+    
+   background: #24afff;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3ce6e3), to(#24afff));
+   background: -webkit-linear-gradient(top, #3ce6e3, #24afff);
+   background: -moz-linear-gradient(top, #3ce6e3, #24afff);
+   background: -ms-linear-gradient(top, #3ce6e3, #24afff);
+   background: -o-linear-gradient(top, #3ce6e3, #24afff);
+    
+   padding: 6px 12px;
+   -webkit-border-radius: 40px;
+   -moz-border-radius: 40px;
+   border-radius: 40px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #000000;
+   font-size: 15px;
+   font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button:hover {
+   border: 20px black;
+   background: #409ced;
+   color: #000000;
+   }
+.button:active {
+   border: black;
+   background: #0eeb75;
+   }
+
+.avatar {
+	width: 124px;
+	height: 132px;
+	border-radius: 40px;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	background: url(pictures/cb.jpg) no-repeat;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 15px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 15px rgba(0, 0, 0, .8);
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+    border-style: inset;
+    border-width: 1px;
+    
+}
+
 
 

@@ -2,12 +2,16 @@
 <html lang="en-US">
 
 <head>
+    <!-- includes -->
     <script src="main.js"></script>
 	<link rel="stylesheet" href="main.css" type="text/css" />
-	<title>Static Navigation</title>
+    <script src="jquery.js"></script> 
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="main.js"></script>
+    
+	<title>Home</title>
     
     <!-- konami code easter egg -->
-    <dev><
     <script type="text/javascript">
         var els, i, len, title;
         var konamiCode = '38,38,40,40,37,39,37,39,66,65';
@@ -24,36 +28,43 @@
         };
         document.addEventListener('keyup', checkKonami);
     </script>
-    </dev>
-    
-    <script src="jquery.js"></script> 
-    <script> 
-        $(function(){
-        $("#divId").load("../BattleCity-master/BattleCity.html"); 
-        });
-    </script> 
-   
-    
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="main.js"></script>
-
+     
 </head>
 
 <body>
     <!-- code for navigation bar -->
 	<div id="navigation">
-		<a href="index.html">Home</a>
-		<a href="portfoilo.html">Portfolio</a>
-		<a href="crowdcontrol.html">CrowdControl</a>
-		<a href="#">Games</a>
-		<a href="#">Press</a>
-		<a href="#">About</a>
+        <a href="index.html" class="button">Home</a>
+		<a href="portfoilo.html" class="button">Portfolio</a>
+		<a href="crowdcontrol.html" class="button">CrowdControl</a>
+		<a href="#" class="button">Games</a>
+		<a href="#" class="button">Press</a>
+		<a href="#" class="button">About</a>
 	</div>
-      
-        
-        
-    
+       
     <div id="content">   
+        <div class="boxed">
+            <h1>
+                ello
+            </h1>
+            <h2>
+                This text is enclosed in a box. This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.
+            </h2>
+        </div>
+    </div>
+    
+        <div id="content">   
+        <div class="boxed">
+            <h1>
+                ello
+            </h1>
+            <h2>
+                This text is enclosed in a box. This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.
+            </h2>
+        </div>
+    </div>
+    
+        <div id="content">   
         <div class="boxed">
             <h1>
                 ello
@@ -71,17 +82,19 @@
   <!-- konami content -->
         <div class="modal-content">
             <div class="modal-header">
-                <span class="close">XXX</span>
+                <span class="close">X</span>
                 <h2>Modal Header</h2>
             </div>
             <div class="modal-body">
                <center>
-                   <!-- game activation -->
-                   <OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" WIDTH="640" HEIGHT="480" id="dots/Dots II/dots-  ii.swf" ALIGN="">
-<PARAM NAME=movie VALUE="YOURFILENAMEHERE.swf">
+                   <!-- game activation -->  
+                   
+                   <OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" WIDTH="640" HEIGHT="480" id="gameId" ALIGN="">
+<PARAM NAME=movie VALUE="gameId">
 <PARAM NAME=quality VALUE=high>
 <PARAM NAME=bgcolor VALUE=#333399>
-<EMBED src="dots/Dots II/dots-ii.swf" quality=high bgcolor=#333399 WIDTH="640" HEIGHT="480" NAME="Yourfilename" ALIGN="" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer"></EMBED></OBJECT>
+<EMBED src="gameId" quality=high bgcolor=#333399 WIDTH="640" HEIGHT="480" NAME="Yourfilename" ALIGN="" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer"></EMBED></OBJECT>
+                
               </center>
             </div>
             <div class="modal-footer">
@@ -89,9 +102,16 @@
             </div>
         </div>
     </div>
+                
+    <script>
+        rand_game();
+        document.querySelectoryALL('gameId').setAttribute('title',name_of_game());
+        
+        alert(document.getElementById('gameId').title);
+    </script>
     <!-- popup action script-->
     <div>
-    <script>
+    <script type="text/javascript">
 // Get the modal
     var modal = document.getElementById('myModal');
 // Get the <span> element that closes the modal
