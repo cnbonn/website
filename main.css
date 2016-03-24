@@ -62,7 +62,7 @@ body {
 
 body {
     background-image: url("honeycomb.jpg");
-    background-size: 100%, 100%;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
 } 
@@ -112,9 +112,8 @@ body {
 
 /* Modal Content/Box */
 .modal-content {
-    word-wrap: break-word;
     background-color: black;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 15% auto ; /* 15% from the top and centered */
     padding: 20px;
     border: 5px solid blue;
     width: 80%; /* Could be more or less, depending on screen size */
