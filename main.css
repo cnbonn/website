@@ -26,7 +26,7 @@ body {
   background: -o-linear-gradient(top, rgba(0,118,245,1), rgba( 73,221,252,1)); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(top, rgba(0,118,245,1), rgba( 73,221,252,1)w); /* For Firefox 3.6 to 15 */
   background: linear-gradient(to top, rgba(0,118,245,1), rgba( 73,221,252,1)); /* Standard syntax */
-  color: rgba(244, 1, 1, 0.8);
+  color: rgba(244, 1, 1, 0);
   border: 2px solid black ;
  
 }
@@ -52,15 +52,21 @@ body {
 
 #content {
 	width: 600px;
-	padding-top: 70px;
-	padding-bottom: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	margin-left: auto;
 	margin-right: auto;
+    
+    
+        
+    
+    
+    
 }
 
 #content img {
-	padding-top: 20px;
-	padding-bottom: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 body {
@@ -73,14 +79,26 @@ body {
 } 
 
 .boxed {
-    border: 5px solid black ;
-    background-color: #2EB2EC;
-    color: black;
-    word-wrap: break-word;
-    padding-top:  30px;
-    padding-bottom: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
+   border: 5px solid black ;
+
+   background: #24afff;
+   
+    
+   padding: 6px 6px;
+   -webkit-border-radius: 40px;
+   -moz-border-radius: 40px;
+   border-radius: 40px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #000000;
+   font-size: 12px;
+   font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+    
 } 
 
 #footer {
@@ -111,6 +129,8 @@ body {
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    
+    
     
     
 }
@@ -180,6 +200,8 @@ body {
 .avatar {
 	width: 124px;
 	height: 132px;
+    float: left;
+    margin-right: 20px;
 	border-radius: 40px;
 	-webkit-border-radius: 40px;
 	-moz-border-radius: 40px;
@@ -208,15 +230,17 @@ hr {
   text-shadow: 4px 4px 0px rgba(0,0,0,0.1); 
   position: relative;
   bottom: 30px;   /* move text u */
+  z-index: 1;
 
 }
 
 ul {
-    list-style-type: none;
+    display: inline-block;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: none;
+    vertical-align: middle;
 }
 
 li {
@@ -235,4 +259,16 @@ li a {
 li a:hover {
     background-color: #111;
 }
+
+/* table heading */
+
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+}
+
 

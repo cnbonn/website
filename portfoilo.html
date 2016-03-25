@@ -3,13 +3,16 @@
 
 <head>
     <!-- includes -->
+    <link rel="icon" type="image/x-icon" href="pictures/favicon.ico"/>
     <script src="main.js"></script>
 	<link rel="stylesheet" href="main.css" type="text/css" />
     <script src="jquery.js"></script> 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="main.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
-	<title>Portfoilo</title>
+	<title>Home</title>
     
     <!-- konami code easter egg -->
     <dev>
@@ -20,6 +23,7 @@
         var checkKonami = function(e) {
         keyPresses.push(e.keyCode);
             if (keyPresses.slice(keyPresses.length-10).join() === konamiCode) {
+                
                 runKonami();
             }
         };
@@ -35,32 +39,39 @@
 
 <body>
     <!-- code for navigation bar -->
+    
 	<div id="navigation">
-        <a href="index.html" class="button">Home</a>
-		<a href="portfoilo.html" class="button">Portfolio</a>
-		<a href="crowdcontrol.html" class="button">CrowdControl</a>
-		<a href="game.html" class="button">Games</a>
-		<a href="about.html" class="button">About</a>
+            <li style="float:right"><a id="name" class="name" ><font size= 100px>Charles Bonn</font></a></li>
+        <ul>
+          <li><a href="index.html" class="button">Home</a></li>
+		  <li><a href="portfoilo.html" class="button">Portfoilo</a></li>
+		  <li><a href="crowdcontrol.html" class="button">CrowdControl</a></li>
+		  <li><a href="game.html" class="button">Games</a></li>
+		  <li><a href="about.html" class="button">About</a></li>
+
+        </ul>
+       
+        
 	</div>
        
+    
+    <!-- extra space for fit -->
     <div id="content">   
         <div class="boxed">
-            <h1>
-                ello
-            </h1>
-            <h2>
-                <div class="avatar" align="left"></div>
-                This text is enclosed in a box. This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.
-            </h2>
+           zz
         </div>
     </div>
+    
     <div id="content">   
         <div class="boxed">
             <h1>
-                ello
+                <center><a id="name" class="name" ><font size= 100px>Charles Bonn</font></a> </center>
             </h1>
             <h2>
-                This text is enclosed in a box. This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.
+                <p>
+                <div class="avatar" align="left" ></div>
+                Hello, my name is Charles Bonn but my friends call me nick. I am currently a senior at SDSM&amp;T studying computer science. My intrests in computer science are mostly in the areas of cyber security and game design. Throught my time programing i have learned a lot and enjoy putting it into use. The part of coding that i enjoy the most is that you are able to create fanstatic things from nothing but lines of words.
+                </p>
             </h2>
         </div>
     </div>
@@ -68,13 +79,52 @@
     <div id="content">   
         <div class="boxed">
             <h1>
-                ello
+                <center> Programming  </center>
             </h1>
+            <hr>
             <h2>
-                This text is enclosed in a box. This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.This text is enclosed in a box.
+                Over the years i have grained experence in many programming languages such as:
+                <p>java</p>
+                <p>Javascript</p>
+                <p>C/C+/C#</p>
+                <p>Python</p>
+                <p>LaTeX</p>
+                <p>Lisp</p>
+                <p>Html</p>
+                </ul>
+                
             </h2>
         </div>
     </div>
+    
+    <div id="content">   
+        <div class="boxed">
+            <h1>
+                <center> links  </center>
+            </h1>
+            <hr>
+            <h2>
+                <center>
+                <!-- github -->
+                <a href="https://github.com/redlikedeath">
+                <input type="image"   src="GitHub-Logos/GitHub_Logo.png" width="102" height="48" class="button"></a>
+                </a>
+                <!-- KnewRecrute-->
+                <a href="https://beta.knewrecruit.com/s/cnbonn">
+                <input type="image"   src="pictures/kn.png" width="102" height="48" class="button" style="background:blue;"></a>
+                </a>
+                <!-- facebook -->
+                <a href="https://www.facebook.com/charles.n.bonn">
+                <input type="image"   src="pictures/fb.png" width="102" height="48" class="button" style="background:white;"></a>
+                </a>
+            </center>
+            </h2>
+            </h2>
+        </div>
+    </div>
+    
+    
+    
     
     
 
@@ -90,30 +140,32 @@
                <center>
                    <!-- game activation -->  
                    
-                   <OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" WIDTH="640" HEIGHT="480" id="gameId1" ALIGN="">
+                   <OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" WIDTH="640" HEIGHT="480" id="gameId1" ALIGN=center>
 <PARAM id="gameId2" NAME=movie VALUE="gameId" >
 <PARAM id="gameId3" NAME=quality VALUE=high>
 <PARAM id="gameId4" NAME=bgcolor VALUE=#333399>
 <EMBED id="gameId5" src="gameId" quality=high bgcolor=#333399 WIDTH="640" HEIGHT="480" NAME="Yourfilename" ALIGN="" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer"></EMBED></OBJECT>
-                  
+                
+        
+    
               </center>
             </div>
+                       
             <div class="modal-footer">
                 <h3>Modal Footer</h3>
             </div>
+                       
         </div>
     </div>
      
+                
     <!-- script to pick a random game -->
-    
+    <div>
     <script type="text/javascript">
         rand_game();
-        document.getElementById('gameId5').setAttribute( 'src' , name_of_game() );
-
-        
-       
+        document.getElementById('gameId5').setAttribute( 'src' , name_of_game() );       
     </script>
-    
+    </div>
 
     <!-- popup action script-->
     <div>
