@@ -1,5 +1,5 @@
 var game_name;
-
+/* functon to pick a random game to pop up */
 function game(url) {
 window.location=url;
 }
